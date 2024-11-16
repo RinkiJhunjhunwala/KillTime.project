@@ -42,5 +42,5 @@ function capitalize(str) {
 }
 
 function goToMainPage() {
-    window.location.href = "index.html"; // Replace with your main page URL
+    window.location.href = "index.html"; 
 }
