@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="stone-paper-scissors..css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="message">Make Your Choice!</h1>
+
+        <div class="game">
+            <div class="dice">
+                <p>Player</p>
+                <img id="playerStone" src="stone.jpeg" alt="Stone" onclick="playerChoice('stone')">
+                <img id="playerPaper" src="paper.jpeg" alt="Paper" onclick="playerChoice('paper')">
+                <img id="playerScissors" src="scissor.jpeg" alt="Scissors" onclick="playerChoice('scissors')">
+            </div>
+
+            <div class="dice">
+                <p>Computer</p>
+                <img id="computerStone" src="stone.jpeg" alt="Stone">
+                <img id="computerPaper" src="paper.jpeg" alt="Paper">
+                <img id="computerScissors" src="scissor.jpeg" alt="Scissors">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="resetGame()">Play Again</button>
+            <button onclick="goToMainPage()">Go to Main Page</button>
+        </div>
+    </div>
+
+    <script src="stone-paper-scissors..js"></script>
+</body>
+</html>

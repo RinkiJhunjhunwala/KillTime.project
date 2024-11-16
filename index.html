@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header Texts -->
+        <div class="header">
+            <h1>Bored? Kill time with these amazing games!</h1>
+            <h2>Which game do you want to play?</h2>
+        </div>
+
+        <!-- Game Options (Containers for games) -->
+        <div class="game-options">
+            <div class="game" id="ticTacToe" onclick="navigateTo('tic-tac-toe.html')">
+                <img class="game-image" src="tic-tac-toe.jpeg" alt="Tic Tac Toe">
+                <p>Tic Tac Toe</p>
+            </div>
+            <div class="game" id="stonePaperScissors" onclick="navigateTo('stone-paper-scissors.html')">
+                <img class="game-image" src="stone-paper-scissors.jpeg" alt="Stone Paper Scissors">
+                <p>Stone Paper Scissors</p>
+            </div>
+            <div class="game" id="diceGame" onclick="navigateTo('dice-game.html')">
+                <img class="game-image" src="dice-game.jpeg" alt="Dice Game">
+                <p>Dice Game</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to navigate to a game page
+        function navigateTo(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background-image.jpg'); /* Replace with your own background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main container for the entire page */
+.main-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Header Texts */
+.header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Game options container: arrange games horizontally */
+.game-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Adjust gap between game containers */
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Individual game containers */
+.game {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s ease;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game:hover {
+    transform: scale(1.1);
+    background-color: #d3d3d3;
+}
+
+/* Images inside the game containers */
+.game-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Text under the game image */
+.game p {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Hover effect on the games */
+.game:hover .game-image {
+    transform: scale(1.1);
+}
+
